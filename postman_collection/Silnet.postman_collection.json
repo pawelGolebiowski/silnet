@@ -1,0 +1,275 @@
+{
+	"info": {
+		"_postman_id": "8e9adb48-40dd-46dd-aecb-16183b085cf9",
+		"name": "Silnet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Read all companies",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/silnet/src/api/company/read.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"silnet",
+								"src",
+								"api",
+								"company",
+								"read.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new company",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"company_name\": \"MOJA FIRMA\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/silnet/src/api/company/create.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"silnet",
+								"src",
+								"api",
+								"company",
+								"create.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update company's data",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"3\",\r\n    \"company_name\": \"MOJA FIRMA\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/silnet/src/api/company/update.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"silnet",
+								"src",
+								"api",
+								"company",
+								"update.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete company from database",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"8\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/silnet/src/api/company/delete.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"silnet",
+								"src",
+								"api",
+								"company",
+								"delete.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Worker",
+			"item": [
+				{
+					"name": "Get all workers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/silnet/src/api/worker/read.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"silnet",
+								"src",
+								"api",
+								"worker",
+								"read.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new worker",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"MACIEJ\",\r\n    \"surname\": \"MACIEJEWSKI\",\r\n    \"company_id\": \"2\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/silnet/src/api/worker/create.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"silnet",
+								"src",
+								"api",
+								"worker",
+								"create.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update worker's information",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"3\",\r\n    \"name\": \"JAROSŁAW\",\r\n    \"surname\": \"NOWAK\",\r\n    \"company_id\": \"2\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/silnet/src/api/worker/update.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"silnet",
+								"src",
+								"api",
+								"worker",
+								"update.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete worker from database",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"13\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/silnet/src/api/worker/delete.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"silnet",
+								"src",
+								"api",
+								"worker",
+								"delete.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
