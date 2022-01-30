@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "8e9adb48-40dd-46dd-aecb-16183b085cf9",
-		"name": "Silnet",
+		"_postman_id": "f9617cd6-c7f4-4845-b1ad-c3ea776e0a8c",
+		"name": "Silnet_Collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -15,20 +15,25 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost/silnet/src/api/company/read.php",
+							"raw": "http://localhost:8000/api/company/read.php",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
+							"port": "8000",
 							"path": [
-								"silnet",
-								"src",
 								"api",
 								"company",
 								"read.php"
@@ -50,17 +55,16 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"company_name\": \"MOJA FIRMA\"\r\n}"
+							"raw": "{\r\n    \"company_name\": \"ABC\"\r\n}"
 						},
 						"url": {
-							"raw": "http://localhost/silnet/src/api/company/create.php",
+							"raw": "http://localhost:8000/api/company/create.php",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
+							"port": "8000",
 							"path": [
-								"silnet",
-								"src",
 								"api",
 								"company",
 								"create.php"
@@ -82,17 +86,16 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": \"3\",\r\n    \"company_name\": \"MOJA FIRMA\"\r\n}"
+							"raw": "{\r\n    \"id\": \"3\",\r\n    \"company_name\": \"MOJA FIRMA1\"\r\n}"
 						},
 						"url": {
-							"raw": "http://localhost/silnet/src/api/company/update.php",
+							"raw": "http://localhost:8000/api/company/update.php",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
+							"port": "8000",
 							"path": [
-								"silnet",
-								"src",
 								"api",
 								"company",
 								"update.php"
@@ -114,17 +117,16 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": \"8\"\r\n}"
+							"raw": "{\r\n    \"id\": \"9\"\r\n}"
 						},
 						"url": {
-							"raw": "http://localhost/silnet/src/api/company/delete.php",
+							"raw": "http://localhost:8000/api/company/delete.php",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
+							"port": "8000",
 							"path": [
-								"silnet",
-								"src",
 								"api",
 								"company",
 								"delete.php"
@@ -157,14 +159,13 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost/silnet/src/api/worker/read.php",
+							"raw": "http://localhost:8000/api/worker/read.php",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
+							"port": "8000",
 							"path": [
-								"silnet",
-								"src",
 								"api",
 								"worker",
 								"read.php"
@@ -186,17 +187,16 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"MACIEJ\",\r\n    \"surname\": \"MACIEJEWSKI\",\r\n    \"company_id\": \"2\"\r\n}"
+							"raw": "{\r\n    \"name\": \"MACIEJ\",\r\n    \"surname\": \"MACIEJ\",\r\n    \"company_id\": \"2\"\r\n}"
 						},
 						"url": {
-							"raw": "http://localhost/silnet/src/api/worker/create.php",
+							"raw": "http://localhost:8000/api/worker/create.php",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
+							"port": "8000",
 							"path": [
-								"silnet",
-								"src",
 								"api",
 								"worker",
 								"create.php"
@@ -218,17 +218,16 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": \"3\",\r\n    \"name\": \"JAROSŁAW\",\r\n    \"surname\": \"NOWAK\",\r\n    \"company_id\": \"2\"\r\n}"
+							"raw": "{\r\n    \"id\": \"5\",\r\n    \"name\": \"JAROSŁAW\",\r\n    \"surname\": \"NOWAK\",\r\n    \"company_id\": \"2\"\r\n}"
 						},
 						"url": {
-							"raw": "http://localhost/silnet/src/api/worker/update.php",
+							"raw": "http://localhost:8000/api/worker/update.php",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
+							"port": "8000",
 							"path": [
-								"silnet",
-								"src",
 								"api",
 								"worker",
 								"update.php"
@@ -250,17 +249,16 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": \"13\"\r\n}"
+							"raw": "{\r\n    \"id\": \"12\"\r\n}"
 						},
 						"url": {
-							"raw": "http://localhost/silnet/src/api/worker/delete.php",
+							"raw": "http://localhost:8000/api/worker/delete.php",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
+							"port": "8000",
 							"path": [
-								"silnet",
-								"src",
 								"api",
 								"worker",
 								"delete.php"
